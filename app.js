@@ -1,4 +1,4 @@
-const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycuN0qzDXNN9Q7rH3193CcsyUOblEqAtwyh9fHh-tcX0kB6eZXco-u1hP0Yf7sR3dL/exec';
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwhQkfkpX0V1Ch3i8kzupxUculNJ9SiF4DG3rpCe0TaBMaiEnIDVKv4gbv8DEhyTn5qDA/exec';
 
 const state = {
   isAdminLoggedIn: false,
