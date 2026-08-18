@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queen's School (Junior) Ibadan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>QUEEN'S SCHOOL (JUNIOR) IBADAN</h1>
+      </div>
+      <nav>
+        <button type="button" class="nav-btn active">Registration</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="registration-section" class="panel">
+        <h2>Student Registration</h2>
+        <form id="student-form">
+          <div class="form-grid">
+            <label>Student Full Name<input name="studentFullName" required /></label>
+            <label>Date of Birth<input type="date" name="dateOfBirth" required /></label>
+            <label>Home Address<input name="homeAddress" required /></label>
+            <label>Local Government of Origin<input name="localGovernment" required /></label>
+            <label>State of Origin<input name="stateOfOrigin" required /></label>
+            <label>Parent/Guardian Name<input name="parentName" required /></label>
+            <label>Parent/Guardian Phone<input name="parentPhone" required /></label>
+            <label>Last School Attended<input name="lastSchool" /></label>
+            <label>Last Class Attended<input name="lastClass" /></label>
+            <label>Religion<input name="religion" required /></label>
+          </div>
+          <div class="actions-row">
+            <button type="submit" class="primary">Register Student</button>
+          </div>
+        </form>
+        <div id="registration-message" class="message"></div>
+        <div id="registration-feedback" class="registration-feedback hidden">
+          <div class="feedback-content">
+            <h3>✓ Registration Successful!</h3>
+            <div class="feedback-item">
+              <label>Student Name:</label>
+              <span id="feedback-name"></span>
+            </div>
+            <div class="feedback-item">
+              <label>Admission Number:</label>
+              <span id="feedback-admission"></span>
+            </div>
+            <div class="feedback-item">
+              <label>Assigned Class:</label>
+              <span id="feedback-class"></span>
+            </div>
+            <button id="register-another-btn" class="secondary" style="margin-top: 15px;">Register Another Student</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
